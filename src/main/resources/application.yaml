@@ -1,1 +1,14 @@
-spring.application.name=pastebin
+spring:
+  application:
+    name: pastebin
+  datasource:
+    url: jdbc:postgresql://localhost:5433/pastebin
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
