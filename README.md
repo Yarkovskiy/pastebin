@@ -11,3 +11,6 @@
 ![изображение](https://github.com/user-attachments/assets/6400a170-5bb6-430b-8c3a-60148b92adf8)
 
 
+ERD:
+
+![pastebin_ERD](https://github.com/user-attachments/assets/16bcd419-d928-4bfc-b299-ee3318642c1a)
