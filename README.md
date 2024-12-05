@@ -1,6 +1,6 @@
 Диаграмма контейнеров (мдель C4):
 
-![C4-контейнерная](https://github.com/user-attachments/assets/c266718a-9bbd-4848-8224-b6dcd74795ba)
+![C4-контейнерная](https://github.com/user-attachments/assets/a0db4141-c817-45f4-9627-0e76634d8890)
 
 Диаграмма компонентов (модель C4):
 
