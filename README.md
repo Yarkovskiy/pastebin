@@ -1,15 +1,14 @@
 Диаграмма контейнеров (мдель C4):
 
-![изображение](https://github.com/user-attachments/assets/580df52a-e5f7-434f-876e-b7cbcc27d56a)
+![C4-контейнерная](https://github.com/user-attachments/assets/c266718a-9bbd-4848-8224-b6dcd74795ba)
 
 Диаграмма компонентов (модель C4):
 
-![изображение](https://github.com/user-attachments/assets/52c55978-a644-47b5-8135-72feecb90b72)
+![С4-компонентная](https://github.com/user-attachments/assets/0b7bb828-37b2-490b-98fd-66f1c946a893)
 
 Диаграмма классов:
 
-![изображение](https://github.com/user-attachments/assets/6400a170-5bb6-430b-8c3a-60148b92adf8)
-
+![классы](https://github.com/user-attachments/assets/05e57c5b-ba52-4e2a-a8ed-c29356d709a0)
 
 ERD:
 
