@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.HashSet;
 import java.util.Set;
 
 @Getter
@@ -36,11 +35,21 @@ public class User {
     @Column(name ="created_at", nullable = false)
     private LocalDateTime createdAt;
 
-    @OneToMany(mappedBy = "user")
-    private Set<Like> likes = new HashSet<>();
+    @ManyToMany
+    @JoinTable(
+            name = "likes",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "post_id")
+    )
+    private Set<Post> likes;
 
-    @OneToMany(mappedBy = "user")
-    private Set<Favourite> favs = new HashSet<>();
+    @ManyToMany
+    @JoinTable(
+            name = "favs",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "post_id")
+    )
+    private Set<Post> favs;
 
 }
 

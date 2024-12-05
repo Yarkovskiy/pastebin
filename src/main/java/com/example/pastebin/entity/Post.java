@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -18,9 +18,6 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-
-    @Column(name = "uuid", unique = true, nullable = false)
-    private UUID uuid;
 
     @Column(name = "title", nullable = false)
     private String title;
@@ -40,7 +37,13 @@ public class Post {
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private User author;
+
+    @ManyToMany(mappedBy = "likes")
+    private Set<User> likedUsers;
+
+    @ManyToMany(mappedBy = "favs")
+    private Set<User> favedUsers;
 
     @Column(name = "total_views", nullable = false)
     private Long totalViews;
