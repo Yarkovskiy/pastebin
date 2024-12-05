@@ -43,13 +43,13 @@ public class Post {
     private User user;
 
     @Column(name = "total_views", nullable = false)
-    private Integer totalViews;
+    private Long totalViews;
 
     @Column(name = "total_likes", nullable = false)
-    private Integer totalLikes;
+    private Long totalLikes;
 
     @Column(name = "total_favs", nullable = false)
-    private Integer totalFavourites;
+    private Long totalFavourites;
 }
 
 
